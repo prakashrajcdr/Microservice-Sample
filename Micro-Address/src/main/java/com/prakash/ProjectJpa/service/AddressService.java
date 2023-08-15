@@ -13,6 +13,7 @@ public class AddressService {
 	AddressRepository addressRepository;
 	
 	public AddressDetail getAddressDetailById(Integer id) {
+		System.out.println("Getting address for employee " + id);
 		return addressRepository.findById(id).orElse(null);
 	}
 

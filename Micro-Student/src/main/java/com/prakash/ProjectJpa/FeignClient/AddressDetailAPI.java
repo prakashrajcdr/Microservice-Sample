@@ -6,7 +6,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(name = "address-detail", path = "/address", url= "localhost:8081")
+//@FeignClient(name = "address-detail", path = "/address", url= "localhost:8081")
 //@RibbonClient(name = "address-detail")
 public interface AddressDetailAPI {
 
