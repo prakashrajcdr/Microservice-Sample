@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 //@FeignClient(name = "address-detail", path = "/address", url= "localhost:8081")
 //@RibbonClient(name = "address-detail")
+@FeignClient(name = "ADDRESS-SERVICE", path = "/address")
 public interface AddressDetailAPI {
 
 	@GetMapping("/getAddress/{id}")
